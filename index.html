@@ -959,7 +959,7 @@
             </script>
               <p style="color:black; font-size:28px;">Podemos ver que la estación que más moonquakes detectó fue la del Apollo 14, ¡en la
                 cual se detectaron casi todos los moonquakes estudiados! Esto se debe a que fueron los sensores más sofisticados de todas las misiones.
-                Asimismo, vemos que los moonquakes que mejor fueron detectados son los profundos y los de meteorito, seguramente porque los sensores están optimizados para esto. Pero,
+                Asimismo, vemos que el tipo de moonquakes que mejor fue detectado por los sensores fueron los profundos y los de meteorito, seguramente porque los sensores están optimizados para esto.
               </p>
           </div>
                     </div>
@@ -970,7 +970,7 @@
                 <div class="row">
                   <div class="col-md-1"></div>
                   <div class="col-md-10">
-                    <p style="color:white; font-size:28px;">Debido a que los moonquakes eran un terreno completamente nuevo para los científicos y los ingenieros de la NASA, ¡no sabíamos qué 
+                    <p style="color:white; font-size:28px;margin-bottom: 2vw; ">Debido a que los moonquakes eran un terreno completamente nuevo para los científicos y los ingenieros de la NASA, ¡no sabíamos qué 
                       información íbamos a obtener de cada moonquake! Sin embargo, después de varias investigaciones, la NASA logró obtener por lo menos una variable para cada uno. Para los moonquakes 
                       profundos, tenemos su profundidad. Para los superficiales, su magnitud, y para los de impactos de meteoritos y artificiales, su duración.
                     </p>
@@ -986,9 +986,10 @@
                     <h2 id="deep" style="color:#AC80A0; margin-bottom: 1vw;">1. Moonquakes profundos</h2>
                     <div class="row">
                     <div class="col-md-5">
-                    <p style="color:black; font-size:24px;">Debido a que los moonquakes eran un terreno completamente nuevo para los científicos y los ingenieros de la NASA, ¡no sabíamos qué 
-                      información íbamos a obtener de cada moonquake! Sin embargo, después de varias investigaciones, la NASA logró obtener por lo menos una variable para cada uno. Para los moonquakes 
-                      profundos, tenemos su profundidad. Para los superficiales, su magnitud, y para los de impactos de meteoritos y artificiales, su duración.
+                    <p style="color:black; font-size:24px; margin-top:1vw;">
+                      Los moonquakes profundos ocurren entre 700 y 1000 km de profundidad, ¡incluso llegando hasta el centro 
+                      de la luna! Como ocurren a una distancia tan grande de los sensores, a muchos de ellos se les dificulta medir con precisión la verdadera profundidad 
+                      del moonquake, causando errores en su medición. ¡Descubre en la gráfica de la derecha los errores asociados a las mediciones de profundidad!
                     </p>
                   </div>
                   <div class="col-md-7">
@@ -1862,7 +1863,7 @@
       "scale": {"zero": false},
       "axis": {"title": "Profundidad del Moonquake"}
     },
-    "color": {"field": "Depth", "type": "quantitative", "title": "Profundidad", "scale": {"scheme": "oranges"}}
+    "color": {"field": "Depth", "type": "quantitative", "title": "Profundidad", "scale": {"scheme": "purples"}}
   },
   "layer": [
     {
@@ -1889,7 +1890,361 @@
                   <div class="col-md-1"></div>
                 </div>
               </div>
+              <div class="container-fluid" style="background-color:#ffffff;">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <h2 id="shallow" style="color:#00C2FF; margin-top: 2vw; text-align:right;">2. Moonquakes superficiales</h2>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div id="graph4" style="display: flex; justify-content: center;"></div>
+                    <script type="text/javascript">
+                      var graph4 = {
+                        $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+                        description: 'A simple bar chart with embedded data.',
+                        width: 400,
+                        height: 300,
+                        data: {
+                          values: [
+                          {
+    "Year": 1971,
+    "Day": 107,
+    "H": 7,
+    "M": 0,
+    "S": 55,
+    "Lat": 48,
+    "Long": 35,
+    "Magnitude": 2.8,
+    "Comments": ""
+  },
+  {
+    "Year": 1971,
+    "Day": 140,
+    "H": 17,
+    "M": 25,
+    "S": 10,
+    "Lat": 42,
+    "Long": -24,
+    "Magnitude": 2,
+    "Comments": ""
+  },
+  {
+    "Year": 1971,
+    "Day": 192,
+    "H": 13,
+    "M": 24,
+    "S": 45,
+    "Lat": 43,
+    "Long": -47,
+    "Magnitude": 1.9,
+    "Comments": "Or lat -42 long -60"
+  },
+  {
+    "Year": 1972,
+    "Day": 2,
+    "H": 22,
+    "M": 29,
+    "S": 40,
+    "Lat": 54,
+    "Long": 101,
+    "Magnitude": 1.9,
+    "Comments": ""
+  },
+  {
+    "Year": 1972,
+    "Day": 261,
+    "H": 14,
+    "M": 35,
+    "S": 55,
+    "Lat": 12,
+    "Long": 46,
+    "Magnitude": 1,
+    "Comments": ""
+  },
+  {
+    "Year": 1972,
+    "Day": 341,
+    "H": 23,
+    "M": 8,
+    "S": 20,
+    "Lat": 51,
+    "Long": 45,
+    "Magnitude": 1.4,
+    "Comments": ""
+  },
+  {
+    "Year": 1972,
+    "Day": 344,
+    "H": 3,
+    "M": 50,
+    "S": 15,
+    "Lat": -20,
+    "Long": -80,
+    "Magnitude": 1.2,
+    "Comments": ""
+  },
+  {
+    "Year": 1973,
+    "Day": 39,
+    "H": 22,
+    "M": 52,
+    "S": 10,
+    "Lat": 33,
+    "Long": 35,
+    "Magnitude": 0.8,
+    "Comments": ""
+  },
+  {
+    "Year": 1973,
+    "Day": 72,
+    "H": 7,
+    "M": 56,
+    "S": 30,
+    "Lat": -84,
+    "Long": -134,
+    "Magnitude": 3.2,
+    "Comments": ""
+  },
+  {
+    "Year": 1973,
+    "Day": 171,
+    "H": 20,
+    "M": 22,
+    "S": 0,
+    "Lat": -1,
+    "Long": -71,
+    "Magnitude": 2.2,
+    "Comments": ""
+  },
+  {
+    "Year": 1973,
+    "Day": 274,
+    "H": 3,
+    "M": 58,
+    "S": 0,
+    "Lat": -37,
+    "Long": -29,
+    "Magnitude": 1.1,
+    "Comments": ""
+  },
+  {
+    "Year": 1974,
+    "Day": 54,
+    "H": 21,
+    "M": 16,
+    "S": 50,
+    "Lat": 36,
+    "Long": -16,
+    "Magnitude": 0.7,
+    "Comments": ""
+  },
+  {
+    "Year": 1974,
+    "Day": 86,
+    "H": 9,
+    "M": 11,
+    "S": 0,
+    "Lat": -48,
+    "Long": -106,
+    "Magnitude": 1.6,
+    "Comments": ""
+  },
+  {
+    "Year": 1974,
+    "Day": 109,
+    "H": 13,
+    "M": 35,
+    "S": 15,
+    "Lat": -37,
+    "Long": 42,
+    "Magnitude": 0.9,
+    "Comments": ""
+  },
+  {
+    "Year": 1974,
+    "Day": 149,
+    "H": 20,
+    "M": 42,
+    "S": 15,
+    "Lat": "",
+    "Long": "",
+    "Magnitude": 0.6,
+    "Comments": "30 degrees from station 16 on east side of station"
+  },
+  {
+    "Year": 1974,
+    "Day": 192,
+    "H": 0,
+    "M": 46,
+    "S": 30,
+    "Lat": 21,
+    "Long": 88,
+    "Magnitude": 2.7,
+    "Comments": ""
+  },
+  {
+    "Year": 1975,
+    "Day": 3,
+    "H": 1,
+    "M": 42,
+    "S": 0,
+    "Lat": 29,
+    "Long": -98,
+    "Magnitude": 3.2,
+    "Comments": ""
+  },
+  {
+    "Year": 1975,
+    "Day": 12,
+    "H": 3,
+    "M": 14,
+    "S": 10,
+    "Lat": 75,
+    "Long": 40,
+    "Magnitude": 1.7,
+    "Comments": ""
+  },
+  {
+    "Year": 1975,
+    "Day": 13,
+    "H": 0,
+    "M": 26,
+    "S": 20,
+    "Lat": -2,
+    "Long": -51,
+    "Magnitude": 1.1,
+    "Comments": ""
+  },
+  {
+    "Year": 1975,
+    "Day": 44,
+    "H": 22,
+    "M": 3,
+    "S": 50,
+    "Lat": -19,
+    "Long": -26,
+    "Magnitude": 1.4,
+    "Comments": ""
+  },
+  {
+    "Year": 1975,
+    "Day": 127,
+    "H": 6,
+    "M": 37,
+    "S": 5,
+    "Lat": -49,
+    "Long": -45,
+    "Magnitude": 1.3,
+    "Comments": ""
+  },
+  {
+    "Year": 1975,
+    "Day": 147,
+    "H": 23,
+    "M": 29,
+    "S": 0,
+    "Lat": 3,
+    "Long": -58,
+    "Magnitude": 1.4,
+    "Comments": ""
+  },
+  {
+    "Year": 1975,
+    "Day": 314,
+    "H": 7,
+    "M": 52,
+    "S": 55,
+    "Lat": -8,
+    "Long": 64,
+    "Magnitude": 1.8,
+    "Comments": ""
+  },
+  {
+    "Year": 1976,
+    "Day": 4,
+    "H": 11,
+    "M": 18,
+    "S": 55,
+    "Lat": 50,
+    "Long": 30,
+    "Magnitude": 1.8,
+    "Comments": ""
+  },
+  {
+    "Year": 1976,
+    "Day": 12,
+    "H": 8,
+    "M": 18,
+    "S": 5,
+    "Lat": 38,
+    "Long": 44,
+    "Magnitude": 1.1,
+    "Comments": ""
+  },
+  {
+    "Year": 1976,
+    "Day": 66,
+    "H": 10,
+    "M": 12,
+    "S": 40,
+    "Lat": 50,
+    "Long": -20,
+    "Magnitude": 2.3,
+    "Comments": ""
+  },
+  {
+    "Year": 1976,
+    "Day": 68,
+    "H": 14,
+    "M": 42,
+    "S": 10,
+    "Lat": -19,
+    "Long": -12,
+    "Magnitude": 1.8,
+    "Comments": ""
+  },
+  {
+    "Year": 1976,
+    "Day": 137,
+    "H": 12,
+    "M": 32,
+    "S": 40,
+    "Lat": 77,
+    "Long": -10,
+    "Magnitude": 1.5,
+    "Comments": ""
+  }
+                          ]
+                        },
+                        "mark": {"type": "circle", "tooltip": true},
+  "transform": [{
+    "calculate": "'10**Magnitude'", "as": "log"
+  }],
+  "encoding": {
+    "x": {"field": "Year", "type": "nominal", "title": "Año"},
+    "y": {"field": "Magnitude", "type": "quantitative", "title": "Magnitud"},
+    "color": {"field": "Magnitude", "type": "quantitative", "title": "Magnitud", "scale": {"scheme": "blues"}}
+  }
+                      };
+                      vegaEmbed('#graph4', graph4);
+                    </script>
+                      </div>
+                    <div class="col-md-7">
+                    <p style="color:black; font-size:24px; margin-top:1vw; text-align:right;">
+                      Al ser superficiales, podemos conocer la magnitud de este tipo de moonquakes, pues 
+                      los sensores alcanzan a detectarla. De la gráfica, vemos que la magnitud máxima que se detectó fue de 3.2 en la escala de Richter; la cual, como en la 
+                      Tierra, mide la potencia de un sismo.<br/>
+                      Muchas personas se preguntan si, en caso de que viviéramos en algún momento en la luna, los moonquakes serían una preocupación... ¡No 
+                      hay de qué afanarse! Un moonquake de 3.2 de magnitud es de gravedad menor. De hecho, en la tierra tenemos <b>100.000</b> sismos de esta 
+                      magnitud al año. Muchos, incluso, ni los sentimos... ¡Nada mal para vivir en la luna!
 
+                    </p>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+              </div>
+ 
               <p style="color:black; margin-left: 1vw; margin-top: 1vw; font-size:28px; margin-bottom: 5vw;">
                 Estos datos se han tomado desde la primera misión a la luna en 1958, y a lo largo de tanto tiempo la NASA ha podido detectar profundidad, duduración y magnitud de cada moonquake. 
 
